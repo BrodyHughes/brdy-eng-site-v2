@@ -8,16 +8,22 @@ export default function Home() {
         {/* Top nav - absolute positioned */}
         <nav className="absolute top-7 left-2 right-6 flex justify-between items-center">
           <span className="text-5xl font-black tracking-tighter -ml-1">BRDY ENG.</span>
-          <div className="flex gap-8 font-mono text-xs uppercase tracking-widest">
+          <div className="flex font-mono text-xs uppercase tracking-widest">
+            <a
+              href="#about"
+              className="px-2 py-1 transition-colors hover:bg-indigo-800"
+            >
+              About
+            </a>
             <a
               href="#work"
-              className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
+              className="px-2 py-1 transition-colors hover:bg-indigo-800"
             >
               Work
             </a>
             <a
               href="#contact"
-              className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
+              className="px-2 py-1 transition-colors hover:bg-indigo-800"
             >
               Contact
             </a>
@@ -32,9 +38,30 @@ export default function Home() {
         </h1>
 
         {/* Bottom - tiny tagline - absolute positioned */}
-        <p className="absolute bottom-6 left-2 font-mono text-xs uppercase tracking-widest">
+        <p className="pl-2 font-mono text-xs uppercase tracking-widest">
           React Native / TypeScript / Performance
         </p>
+      </section>
+
+      {/* About Section */}
+      <section
+        id="about"
+        className="min-h-screen bg-white text-black py-6 pr-6 flex flex-col justify-center overflow-hidden"
+      >
+        <h2 className="text-[clamp(2rem,14vw,11rem)] font-black leading-[0.85] uppercase tracking-tighter">
+          About
+        </h2>
+        <p className="pl-2 font-mono text-xs uppercase tracking-widest max-w-2xl">
+          Mobile engineer with 5+ years building high-performance React Native
+          apps. Previously at Rainbow, shipping features to hundreds of thousands of users.
+          Passionate about smooth animations, clean architecture, and great UX.
+        </p>
+        <Link
+          href="/about"
+          className="font-mono text-xs uppercase tracking-widest px-2 py-1 transition-colors hover:bg-indigo-800 inline-block w-fit"
+        >
+          Read More →
+        </Link>
       </section>
 
       {/* Work Section */}
@@ -50,7 +77,7 @@ export default function Home() {
               Buddy
             </h2>
           </Link>
-          <p className="mt-8 pl-2 font-mono text-xs uppercase tracking-widest">
+          <p className="pl-2 font-mono text-xs uppercase tracking-widest">
             React Native / 2024 / MTG Companion App
           </p>
         </article>
@@ -61,7 +88,7 @@ export default function Home() {
               Cadence
             </h2>
           </Link>
-          <p className="mt-8 pl-2 font-mono text-xs uppercase tracking-widest">
+          <p className="pl-2 font-mono text-xs uppercase tracking-widest">
             React Native / 2025 / Habit Tracking App
           </p>
         </article>
@@ -74,8 +101,8 @@ export default function Home() {
               Source
             </h2>
           </Link>
-          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-8">
-            Contributions / Rainbow / Web3
+          <p className="font-mono pl-2 text-xs uppercase tracking-widest">
+            Contributions / Web3 / Blockchain
           </p>
         </article>
       </section>
@@ -87,14 +114,14 @@ export default function Home() {
       >
         <a
           href="mailto:eng@brdy.dev"
-          className="text-[clamp(1.5rem,7vw,6rem)] font-black leading-[0.9] transition-colors hover:bg-indigo-800 hover:text-white inline-block w-fit"
+          className="text-[clamp(1.5rem,7vw,6rem)] font-black leading-[0.9] transition-colors hover:bg-indigo-800 inline-block w-fit"
         >
           ENG@BRDY.LOL
         </a>
         <div className="flex gap-8 font-mono text-xs uppercase tracking-widest mt-0">
           <a
             href="https://github.com/brodyhughes"
-            className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
+            className="px-2 py-1 transition-colors hover:bg-indigo-800"
           >
           GitHub
           </a>
