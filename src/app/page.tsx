@@ -1,65 +1,105 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <>
+      {/* Hero Section */}
+      <section className="h-screen bg-white text-black flex flex-col justify-center py-6 pr-6 overflow-hidden relative">
+        {/* Top nav - absolute positioned */}
+        <nav className="absolute top-7 left-2 right-6 flex justify-between items-center">
+          <span className="text-5xl font-black tracking-tighter -ml-1">BRDY ENG.</span>
+          <div className="flex gap-8 font-mono text-xs uppercase tracking-widest">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="#work"
+              className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              Work
+            </a>
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="#contact"
+              className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
             >
-              Learning
-            </a>{" "}
-            center.
+              Contact
+            </a>
+          </div>
+        </nav>
+
+        {/* Center - MASSIVE type */}
+        <h1 className="text-[clamp(3rem,17vw,12rem)] font-black leading-[0.85] uppercase tracking-tighter max-w-full">
+          Software
+          <br />
+          Engineer
+        </h1>
+
+        {/* Bottom - tiny tagline - absolute positioned */}
+        <p className="absolute bottom-6 left-2 font-mono text-xs uppercase tracking-widest">
+          React Native / TypeScript / Performance
+        </p>
+      </section>
+
+      {/* Work Section */}
+      <section
+        className="min-h-screen bg-black text-white py-6 pr-6 overflow-hidden flex flex-col justify-center"
+        id="work"
+      >
+        <article className="mb-6">
+          <Link href="/work/rhystic-buddy">
+            <h2 className="text-[clamp(2rem,14vw,11rem)] font-black leading-[0.85] uppercase tracking-tighter transition-colors hover:bg-indigo-800 inline-block">
+              Rhystic
+              <br />
+              Buddy
+            </h2>
+          </Link>
+          <p className="mt-8 pl-2 font-mono text-xs uppercase tracking-widest">
+            React Native / 2024 / MTG Companion App
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        </article>
+
+        <article className="mb-6">
+          <Link href="/work/cadence">
+            <h2 className="text-[clamp(2rem,14vw,11rem)] font-black leading-[0.85] uppercase tracking-tighter transition-colors hover:bg-indigo-800 inline-block">
+              Cadence
+            </h2>
+          </Link>
+          <p className="mt-8 pl-2 font-mono text-xs uppercase tracking-widest">
+            React Native / 2025 / Habit Tracking App
+          </p>
+        </article>
+
+        <article>
+          <Link href="/work/open-source">
+            <h2 className="text-[clamp(2rem,14vw,11rem)] font-black leading-[0.85] uppercase tracking-tighter transition-colors hover:bg-indigo-800 inline-block">
+              Open
+              <br />
+              Source
+            </h2>
+          </Link>
+          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-8">
+            Contributions / Rainbow / Web3
+          </p>
+        </article>
+      </section>
+
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="min-h-screen bg-white text-black py-6 pr-6 flex flex-col justify-center overflow-hidden"
+      >
+        <a
+          href="mailto:eng@brdy.dev"
+          className="text-[clamp(1.5rem,7vw,6rem)] font-black leading-[0.9] transition-colors hover:bg-indigo-800 hover:text-white inline-block w-fit"
+        >
+          ENG@BRDY.LOL
+        </a>
+        <div className="flex gap-8 font-mono text-xs uppercase tracking-widest mt-0">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://github.com/brodyhughes"
+            className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          GitHub
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
