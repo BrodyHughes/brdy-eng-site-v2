@@ -44,7 +44,7 @@ export default function About() {
           <div className="max-w-2xl">
             <p className="text-xs leading-relaxed font-mono uppercase">
               Software engineer with 5+ years of experience building
-              high-performance React Native applications. I specialize in
+              high-performance React + React Native applications. I specialize in
               creating smooth, 60 FPS experiences that feel native on both iOS
               and Android.
             </p>
@@ -60,7 +60,8 @@ export default function About() {
               I care deeply about performance optimization, clean typed
               architecture, and the small details that make apps feel great.
               When I&apos;m not coding, you&apos;ll find me playing Magic: The
-              Gathering—which inspired Rhystic Buddy.
+              Gathering (which inspired Rhystic Buddy), climbing in my local 
+              rock-climbing gym, or playing video games on my PC.
             </p>
           </div>
         </div>

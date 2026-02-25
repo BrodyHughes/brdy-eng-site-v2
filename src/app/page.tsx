@@ -4,9 +4,19 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="h-screen bg-white text-black flex flex-col justify-center py-6 pr-6 overflow-hidden relative">
+      <section className="h-screen text-white flex flex-col justify-center py-6 pr-6 overflow-hidden relative">
+        {/* Background GIF */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url(/metallic-2.gif)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+
         {/* Top nav - absolute positioned */}
-        <nav className="absolute top-7 left-2 right-6 flex justify-between items-center">
+        <nav className="absolute top-7 left-2 right-6 flex justify-between items-center z-10">
           <span className="text-5xl font-black tracking-tighter -ml-1">BRDY ENG.</span>
           <div className="flex font-mono text-xs uppercase tracking-widest">
             <a
@@ -31,14 +41,14 @@ export default function Home() {
         </nav>
 
         {/* Center - MASSIVE type */}
-        <h1 className="text-[clamp(3rem,17vw,12rem)] font-black leading-[0.85] uppercase tracking-tighter max-w-full">
+        <h1 className="text-[clamp(3rem,17vw,12rem)] font-black leading-[0.85] uppercase tracking-tighter max-w-full z-10">
           Software
           <br />
           Engineer
         </h1>
 
-        {/* Bottom - tiny tagline - absolute positioned */}
-        <p className="pl-2 font-mono text-xs uppercase tracking-widest">
+        {/* Bottom - tiny tagline */}
+        <p className="pl-2 font-mono text-xs uppercase tracking-widest z-10">
           React Native / TypeScript / Performance
         </p>
       </section>
