@@ -41,7 +41,7 @@ export default function About() {
           </div>
 
           {/* Bio */}
-          <div className="max-w-2xl">
+          <div className="max-w-2xl pl-2">
             <p className="text-xs leading-relaxed font-mono uppercase">
               Software engineer with 5+ years of experience building
               high-performance React + React Native applications. I specialize in

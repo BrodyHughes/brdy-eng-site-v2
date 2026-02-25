@@ -17,17 +17,17 @@ export default function Home() {
 
         {/* Top nav - absolute positioned */}
         <nav className="absolute top-7 left-2 right-6 flex justify-between items-center z-10">
-          <span className="text-5xl font-black tracking-tighter -ml-1">BRDY ENG.</span>
+          <span className="text-3xl md:text-5xl font-black tracking-tighter -ml-1 whitespace-nowrap">BRDY ENG.</span>
           <div className="flex font-mono text-xs uppercase tracking-widest">
             <a
               href="#about"
-              className="px-2 py-1 transition-colors hover:bg-indigo-800"
+              className="hidden md:block px-2 py-1 transition-colors hover:bg-indigo-800"
             >
               About
             </a>
             <a
               href="#work"
-              className="px-2 py-1 transition-colors hover:bg-indigo-800"
+              className="hidden md:block px-2 py-1 transition-colors hover:bg-indigo-800"
             >
               Work
             </a>
