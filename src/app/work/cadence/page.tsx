@@ -27,17 +27,17 @@ export default function Cadence() {
             Cadence
           </h1>
 
-          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-8">
+          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-2">
             React Native / 2025 / Habit Tracking App
           </p>
 
-          <p className="text-xs pl-2 leading-relaxed mt-12 max-w-2xl font-mono uppercase">
+          <p className="text-xs pl-2 leading-relaxed mt-2 max-w-2xl font-mono uppercase">
             A beautiful habit tracker with a modern glassmorphic interface.
             Create calendars for each habit, track streaks, and visualize your
             progress. All data stays local on your device.
           </p>
 
-          <div className="flex gap-8 font-mono text-xs uppercase tracking-widest mt-12">
+          <div className="flex gap-8 font-mono text-xs uppercase tracking-widest mt-2">
             <a
               href="https://github.com/BrodyHughes/cadence"
               target="_blank"
@@ -51,7 +51,7 @@ export default function Cadence() {
       </section>
 
       {/* Screenshots */}
-      <section className="py-24 overflow-x-auto">
+      <section className="py-12 overflow-x-auto">
         <div className="flex gap-6 pr-6 pl-2 w-max">
           {[1, 2, 3, 4, 5].map((num) => (
             <div

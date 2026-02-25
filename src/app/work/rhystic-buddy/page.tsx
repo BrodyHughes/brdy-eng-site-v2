@@ -29,21 +29,21 @@ export default function RhysticBuddy() {
             Buddy
           </h1>
 
-          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-8">
+          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-2">
             React Native / 2024 / MTG Companion App
           </p>
 
-          <p className="text-xs pl-2 leading-relaxed mt-12 max-w-2xl font-mono uppercase">
+          <p className="text-xs pl-2 leading-relaxed mt-2 max-w-2xl font-mono uppercase">
             A companion app for Magic: The Gathering players. Track life totals,
             manage commander damage, and keep your games running smoothly.
           </p>
 
-          <div className="flex gap-8 font-mono text-xs uppercase tracking-widest mt-12">
+          <div className="flex gap-8 font-mono text-xs uppercase tracking-widest mt-2 pl-2">
             <a
               href="https://apps.apple.com/us/app/rhystic-buddy/id6748365114"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
+              className="px-0 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
             >
               App Store
             </a>
@@ -51,7 +51,7 @@ export default function RhysticBuddy() {
               href="https://github.com/BrodyHughes/Rhystic_Buddy"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
+              className="px-0 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
             >
               GitHub
             </a>
@@ -60,7 +60,7 @@ export default function RhysticBuddy() {
       </section>
 
       {/* Screenshots */}
-      <section className="py-24 overflow-x-auto">
+      <section className="py-12 overflow-x-auto">
         <div className="flex gap-6 pr-6 pl-2 w-max">
           {[1, 2, 3, 4, 5].map((num) => (
             <div

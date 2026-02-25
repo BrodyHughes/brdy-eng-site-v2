@@ -51,7 +51,7 @@ export default function Home() {
         <h2 className="text-[clamp(2rem,14vw,11rem)] font-black leading-[0.85] uppercase tracking-tighter">
           About
         </h2>
-        <p className="pl-2 font-mono text-xs uppercase tracking-widest max-w-2xl">
+        <p className="pl-2 font-mono text-xs uppercase max-w-2xl">
           Mobile engineer with 5+ years building high-performance React Native
           apps. Previously at Rainbow, shipping features to hundreds of thousands of users.
           Passionate about smooth animations, clean architecture, and great UX.

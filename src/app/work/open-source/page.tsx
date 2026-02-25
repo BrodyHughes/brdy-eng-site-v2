@@ -28,7 +28,7 @@ export default function OpenSource() {
             Source
           </h1>
 
-          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-8">
+          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-2">
             Contributions to the community
           </p>
         </div>
@@ -48,10 +48,10 @@ export default function OpenSource() {
               Wallet
             </h2>
           </a>
-          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-8">
+          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-2">
             React Native / Ethereum Wallet / 2M+ Users
           </p>
-          <p className="text-xs pl-2 leading-relaxed mt-6 max-w-2xl font-mono uppercase">
+          <p className="text-xs pl-2 leading-relaxed mt-2 max-w-2xl font-mono uppercase">
             A fun, simple, and secure way to manage your Ethereum assets and
             explore web3.
           </p>
@@ -69,10 +69,10 @@ export default function OpenSource() {
               Extension
             </h2>
           </a>
-          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-8">
+          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-2">
             TypeScript / Browser Extension / Chrome & Firefox
           </p>
-          <p className="text-xs pl-2 leading-relaxed mt-6 max-w-2xl font-mono uppercase">
+          <p className="text-xs pl-2 leading-relaxed mt-2 max-w-2xl font-mono uppercase">
             The Rainbow experience, now in your browser. Connect to dapps and
             manage your wallet seamlessly.
           </p>
