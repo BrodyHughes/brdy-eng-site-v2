@@ -1,67 +1,48 @@
-import Link from "next/link";
 import Image from "next/image";
+import SubpageNav from "../../components/SubpageNav";
 
 export default function RhysticBuddy() {
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Top nav */}
-      <nav className="py-6 pl-1 pr-6 flex justify-between items-center">
-        <Link
-          href="/"
-          className="text-5xl font-black tracking-tighter pr-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
-        >
-          BRDY ENG.
-        </Link>
-        <Link
-          href="/#work"
-          className="font-mono text-xs uppercase tracking-widest px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
-        >
-          Back
-        </Link>
-      </nav>
+      <SubpageNav backHref="/#work" />
 
       {/* Project content */}
-      <section className="py-6 pr-6">
-        <div className="max-w-4xl">
-          <h1 className="text-[clamp(2rem,12vw,8rem)] font-black leading-[0.85] uppercase tracking-tighter">
-            Rhystic
-            <br />
-            Buddy
-          </h1>
-
-          <p className="font-mono pl-2 text-xs uppercase tracking-widest mt-2">
+      <section className="pt-24 pb-6 px-4 md:px-6 flex flex-col gap-8">
+        <div className="flex flex-col gap-5">
+          <h1 className="text-title font-bold -ml-[0.06em]">Rhystic Buddy</h1>
+          <p className="font-mono text-label uppercase">
             React Native / 2024 / MTG Companion App
           </p>
+        </div>
 
-          <p className="text-xs pl-2 leading-relaxed mt-2 max-w-2xl font-mono uppercase">
-            A companion app for Magic: The Gathering players. Track life totals,
-            manage commander damage, and keep your games running smoothly.
-          </p>
+        <p className="text-lead max-w-3xl">
+          A companion app for Magic: The Gathering players. Track life totals,
+          manage commander damage, and keep your games running smoothly.
+        </p>
 
-          <div className="flex gap-8 font-mono text-xs uppercase tracking-widest mt-2 pl-2">
-            <a
-              href="https://apps.apple.com/us/app/rhystic-buddy/id6748365114"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-0 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
-            >
-              App Store
-            </a>
-            <a
-              href="https://github.com/BrodyHughes/Rhystic_Buddy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-0 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
-            >
-              GitHub
-            </a>
-          </div>
+        <div className="flex gap-6 font-mono text-label uppercase">
+          <a
+            href="https://apps.apple.com/us/app/rhystic-buddy/id6748365114"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="-ml-2 px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
+          >
+            App Store
+          </a>
+          <a
+            href="https://github.com/BrodyHughes/Rhystic_Buddy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-2 py-1 transition-colors hover:bg-indigo-800 hover:text-white"
+          >
+            GitHub
+          </a>
         </div>
       </section>
 
       {/* Screenshots */}
       <section className="py-12 overflow-x-auto">
-        <div className="flex gap-6 pr-6 pl-2 w-max">
+        <div className="flex gap-6 px-4 md:px-6 w-max">
           {[1, 2, 3, 4, 5].map((num) => (
             <div
               key={num}
